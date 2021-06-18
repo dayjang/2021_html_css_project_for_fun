@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+
+
+body {
+  width: 350px;
+   /* height: 700px; */
+  border: solid;
+  border-color: lightseagreen;
+  font-family: "Sofia"; 
+}
+
+.status-bar {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+.status-bar__column {
+  width: 20%;
+  position: absolute;
+  top: 50px;
+  left: 35px;
+}
+.status-bar__column-playlist {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.main__column {
+  height: 100px;
+  width: 100px;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color:  sandybrown;
+}
+
+.main__playing {
+  margin: 10px;
+  line-height: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.playbuttons{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.playbuttons__smallbutton{
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  border: 2px solid black;
+  border-width: 2px 2px 4px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.playbuttons__bigbutton{
+  height: 50px;
+  width: 150px;
+  border-radius: 15px;
+  border: 2px solid black;
+  border-width: 2px 2px 4px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playlist {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+
+.playlist-list {
+  display:flex;
+  flex-direction: column;
+/*  */
+}
+
+.playlist__li {
+  display:flex;
+  align-items: flex-start;
+}
+
+.playlist__li h4 {
+font-size: 20px
+}
+
+.playlist__li h5 {
+color: grey;
+}
+
+.playlist__cover {
+  height: 50px;
+  width: 50px;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.playlist__info {
+  /* dispaly:flex; */
+  height: 10px;
+  width: 250px;
+  line-height: 0;
+  text-align: left;
+}
+
+.playlist__li:first-child .playlist__cover
+{background-color: tomato;
+}
+
+.playlist__li:nth-child(2) .playlist__cover
+{background-color: yellow;
+}
+
+.playlist__li:nth-child(3) .playlist__cover
+{background-color: greenyellow;
+}
+
+.playlist__li:nth-child(4) .playlist__cover
+{background-color: green;
+}
